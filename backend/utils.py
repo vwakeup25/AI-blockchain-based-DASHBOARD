@@ -37,9 +37,9 @@ JWT_ALGO = os.getenv("JWT_ALGO", "HS256")
 ACCESS_TOKEN_EXPIRE_MINUTES = 12 * 60
 DB_URL = os.getenv("DATABASE_URL", f"sqlite:///{os.path.join(BASE_DIR, 'secure_logs.db')}")
 FERNET_KEY_PATH = os.path.join("./fernet.key")
-ED25519_PRIV_PATH = os.path.join(BASE_DIR, "ed25519_private.key")
-ED25519_PUB_PATH = os.path.join(BASE_DIR, "ed25519_public.key")
-GEOLITE_DB = os.path.join(BASE_DIR, "GeoLite2-City.mmdb")
+ED25519_PRIV_PATH = os.path.join("ed25519_private.key")
+ED25519_PUB_PATH = os.path.join("./ed25519_public.key")
+GEOLITE_DB = os.path.join("./GeoLite2-City.mmdb")
 REDIS_HOST = '127.0.0.1'
 REDIS_PORT = 6379
 
