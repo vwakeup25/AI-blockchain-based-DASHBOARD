@@ -16,7 +16,7 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, 
 from reportlab.lib.styles import getSampleStyleSheet
 from io import BytesIO
 
-from .utils import (
+from utils import (
     engine, Session, Block, User, LogsResponse,
     create_access_token, get_current_user, hash_password, verify_password,
     current_rate, rate_history, verify_signature,
